@@ -20,3 +20,4 @@ hexo new page --path about/me
 ~~~
 
 参考：[hexo指令](https://hexo.io/zh-cn/docs/commands)
+参考：[fluid配置指南](https://hexo.fluid-dev.com/docs/guide/#%E6%87%92%E5%8A%A0%E8%BD%BD)
