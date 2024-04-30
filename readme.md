@@ -1,22 +1,24 @@
-```shell
-git add . & git commit -m "update" & git push
-```
-
 >   关于主题
 
-放置在`node_modules`文件夹中而不是`themes`文件夹
+放置在`node_modules`文件夹中和`themes`文件夹中都是一样的！
+
+`主题中的source`文件夹和`博客中的source`文件夹中的资源会融合到一块，并***优先***使用`博客中的source`文件夹的资源
 
 >   关于hexo新建文章或其他菜单栏
 
 ~~~shell
-新建文章，会放置在source文件夹
-hexo new "HelloWorld"
+新建文章，会放置在source/_post文件夹
+hexo new [post/page] <title>
+hexo new [post] "HelloWorld"
+post:文章
+page:自定义页面
 
-新建about等菜单栏页面
-hexo new page --path about（这样会创建一个index.html页面）
-hexo new page --path about/me
+自定义页面,会在source下生成一个about文件夹和index.md,如果是about页面，文章中的头部设置中的layout: about
+hexo new page about
 
-在theme的config配置文件中修改相应的配置
+自定义页面,会在source下生成一个test文件夹和index.md
+hexo new page test
+
 ~~~
 
 参考：[hexo指令](https://hexo.io/zh-cn/docs/commands)
