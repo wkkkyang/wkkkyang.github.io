@@ -82,7 +82,7 @@ fun_features:
 lazyload:
   enable: true
 
-  # 加载时的占位图片
+  # 加载时的占位图片。
   # The placeholder image when loading
   loading_img: /img/loading.gif
 
