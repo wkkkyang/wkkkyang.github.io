@@ -37,11 +37,3 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
-
-111
-
-![](/_posts/helloworldtest/test.jpg)
-
-222
-
-<img src="/_posts/helloworldtest/test.jpg">
