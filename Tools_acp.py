@@ -17,6 +17,8 @@ def main(message, modify_file):
 
 if __name__ == '__main__':
     modify_file = input("Enter Modified File Path:\n").strip().strip('"')
+    if os.path.isdir(modify_file):
+        modify_file = modify_file + r"\*.*"
     mess = input('输入提交信息>>>').strip().replace(' ', '-').replace('|', '-').replace('>', '-')
     decide = input("是否提交(y/n)>>>").strip().lower()
     if decide == 'y':
